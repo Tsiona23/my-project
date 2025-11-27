@@ -1,0 +1,143 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tsion Hailekiros — Frontend Developer</title>
+  <meta name="description" content="Tsion Hailekiros — frontend developer. Building responsive, accessible websites with HTML, CSS and JavaScript. View projects, skills and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <h1 class="site-title">Tsion Hailekiros</h1>
+      <p class="subtitle">Frontend developer — HTML • CSS • JavaScript</p>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- Hamburger button for mobile -->
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- About Section -->
+  <section id="about" class="container about-section">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <img src="mypic.jpg" alt="Tsion Haile — portrait" width="300" height="300" class="profile-img" loading="lazy">
+      <div class="about-text">
+        <p>Hi — I’m Tsion. I build responsive, accessible interfaces using HTML, CSS and JavaScript. I'm learning new front-end skills and building real projects to showcase what I can do.</p>
+        <p class="cta-row">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn ghost" href="Tsion-Hailekiros-Resume.pdf" download>Download resume</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><label>HTML</label><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+      <div class="skill"><label>CSS</label><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+      <div class="skill"><label>JavaScript</label><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+      <div class="skill"><label>Git</label><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section container">
+    <h2>Projects</h2>
+
+    <div class="project-filter" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="html">HTML</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="api">API</button>
+    </div>
+
+    <div class="project-grid" id="project-grid">
+      <article class="project-card" data-tags="html js">
+        <img src="projects/todo/screenshot.png" alt="To-Do app screenshot" loading="lazy" width="800" height="450">
+        <div class="card-body">
+          <h3>To-Do List</h3>
+          <p class="short">A task manager with add/edit/delete, filtering, and localStorage persistence.</p>
+          <p class="tags">HTML • CSS • JavaScript</p>
+          <div class="card-links">
+            <a href="https://tsiona23.github.io/todo" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="https://github.com/tsiona23/todo" target="_blank" rel="noopener noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="js api">
+        <img src="projects/weather/screenshot.png" alt="Weather app screenshot" loading="lazy" width="800" height="450">
+        <div class="card-body">
+          <h3>Weather App</h3>
+          <p class="short">Shows current weather by city using a free weather API; includes icons and unit toggle.</p>
+          <p class="tags">HTML • CSS • JavaScript • API</p>
+          <div class="card-links">
+            <a href="https://tsiona23.github.io/weather" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="https://github.com/tsiona23/weather" target="_blank" rel="noopener noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container contact-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message..." rows="6" required></textarea>
+
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-actions">
+        <button type="submit">Send message</button>
+        <span id="form-status" role="status" aria-live="polite"></span>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Tsion — Built with ❤️</p>
+    <p>
+      <a href="https://github.com/tsiona23" target="_blank" rel="noopener noreferrer">GitHub</a> •
+      <a href="https://www.linkedin.com/in/tsion-hailekiros-47b361320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
