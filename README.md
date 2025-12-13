@@ -21,9 +21,7 @@ This is a personal portfolio website built with HTML, CSS, and JavaScript to sho
 
 1. Clone the repo:
 
-   ```
    git clone https://github.com/Tsiona23/my-project.git
-   ```
 
 2. Open `index.html` in your browser.
 
