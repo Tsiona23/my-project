@@ -11,7 +11,7 @@ This is a personal portfolio website built with HTML, CSS, and JavaScript to sho
 - **Accessible markup**: Built following accessibility best practices.
 
 ## Sections
-
+ 
 - **About**: Short bio and overview.
 - **Skills**: Visual bars indicate proficiency in HTML, CSS, JavaScript, and Git.
 - **Projects**: Two sample projects (To-Do List and Weather App) with screenshots and live/code links.
