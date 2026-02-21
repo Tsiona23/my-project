@@ -4,7 +4,7 @@ This is a personal portfolio website built with HTML, CSS, and JavaScript to sho
 
 ## Features
 
-- **Responsive design**: Works on desktop and mobile devices.
+- **Responsive design**: Works on desktop and mobile devices. 
 - **Dark mode toggle**: Easily switch between light and dark themes.
 - **Project showcase**: Highlights front-end projects with live demos and code links.
 - **Contact form**: Get in touch via a simple form (powered by Formspree).
